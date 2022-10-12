@@ -7,3 +7,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/pass_local?zeroDateTimeBehavior=convertToNull&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
     hikari:
       maximum-pool-size: 20 # default 10
+
+  batch:
+    jdbc:
+      initialize-schema: always
