@@ -21,6 +21,9 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-batch'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux' // WebClient
+    // @ConfigurationProperties
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
     testImplementation 'org.projectlombok:lombok:1.18.22'
     testImplementation 'org.projectlombok:lombok:1.18.22'
     runtimeOnly 'com.h2database:h2'
@@ -33,6 +36,9 @@ dependencies {
     // mapstruct
     implementation 'org.mapstruct:mapstruct:1.5.2.Final'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.2.Final'
+
+    // hibernate-types
+    implementation 'com.vladmihalcea:hibernate-types-52:2.19.2'
 
     // ###### test #####
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
