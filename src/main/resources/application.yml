@@ -11,7 +11,7 @@ spring:
       # minimum-idle: 20                  maximum-pool-size를 따라가므로 설정을 생략합니다.
   batch:
     job:
-      enabled: false # 기본값 true는 Spring Boot 실행 시 등록되어 있는 Job들이 실행됩니다.
+      enabled: false # 기본값 true는 Spring Boot 실행 시 등록되어 있는 Job들이 실행됩니다.(api로 실행하기 위해)
     jdbc:
       # Batch에 사용되는 SQL 초기화 스크립트를 실행합니다. 임베디드인 경우에는 기본적으로 실행하는데, always 설정을 하면 임베디드 타입처럼 항상 활성화시킬 수 있습니다.
       # 초기 수행한 이후에는 꺼두어도 됩니다.
