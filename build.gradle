@@ -21,7 +21,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-batch'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    
+
     // WebClient
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
@@ -30,6 +30,9 @@ dependencies {
 
     // AsyncItemProcessor, AsyncItemWriter
     implementation 'org.springframework.batch:spring-batch-integration'
+
+    // csv
+    implementation 'com.opencsv:opencsv:5.7.0'
 
     testImplementation 'org.projectlombok:lombok:1.18.22'
     testImplementation 'org.projectlombok:lombok:1.18.22'
